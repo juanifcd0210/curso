@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<futbol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Alumnos/Desktop/prueba.xsd">
+<!DOCTYPE futbol SYSTEM "C:\_IFCD0210\MF0491_3 Cliente 180H\UF1841 60H\E2\futbol.dtd">
+<futbol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/_IFCD0210/MF0491_3%20Cliente%20180H/UF1841%2060H/E2/futbol.xsd"> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Alumnos/Desktop/prueba.xsd">
 	<equipo>
 		<nombre>Levante</nombre>
 		<ciudad>Valencia</ciudad>

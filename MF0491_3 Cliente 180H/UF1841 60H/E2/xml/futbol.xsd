@@ -25,7 +25,7 @@
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="futbol">
-		<xs:complexType>
+		<xs:complexType mixed="true">
 			<xs:sequence>
 				<xs:element ref="equipo" maxOccurs="unbounded"/>
 			</xs:sequence>
