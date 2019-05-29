@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD generado con XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) -->
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT equipo (nombre, ciudad, entrenador, jugadores)>
+<!ELEMENT futbol (#PCDATA | equipo)*>
+<!ATTLIST futbol
+	xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+	xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
+>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT jugador (nombre, nacionalidad)>
+<!ATTLIST jugador
+	posicion (defensa | delantero | portero) #IMPLIED
+	posicicion CDATA #FIXED "delantero"
+>
+<!ELEMENT jugadores (jugador+)>
+<!ELEMENT entrenador EMPTY>
+<!ELEMENT nacionalidad (#PCDATA)>

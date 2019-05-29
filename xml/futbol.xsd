@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- editado con XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) por * (*) -->
+<!-- W3C Schema generado con XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ciudad">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="San Sebastián"/>
+				<xs:enumeration value="Tenerife"/>
+				<xs:enumeration value="Valencia"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="entrenador">
+		<xs:complexType/>
+	</xs:element>
+	<xs:element name="equipo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre"/>
+				<xs:element ref="ciudad"/>
+				<xs:element ref="entrenador"/>
+				<xs:element ref="jugadores"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="futbol">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="equipo" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="jugador">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre"/>
+				<xs:element ref="nacionalidad"/>
+			</xs:sequence>
+			<xs:attribute name="posicion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="defensa"/>
+						<xs:enumeration value="delantero"/>
+						<xs:enumeration value="portero"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="posicicion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="delantero"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="jugadores">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="jugador" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nacionalidad">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="camerunés"/>
+				<xs:enumeration value="chilena"/>
+				<xs:enumeration value="española"/>
+				<xs:enumeration value="venezolana"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="nombre">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Claudio Bravo"/>
+				<xs:enumeration value="Dani Hernández"/>
+				<xs:enumeration value="Javier Jiménez"/>
+				<xs:enumeration value="Levante"/>
+				<xs:enumeration value="Mikel González"/>
+				<xs:enumeration value="Nano Mesa"/>
+				<xs:enumeration value="Nong"/>
+				<xs:enumeration value="Real Sociedad"/>
+				<xs:enumeration value="Tenerife&gt;"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>
